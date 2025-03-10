@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper:latest
+    container_name: zookeeper
+    restart: always
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2182:2181"
+
+  kafka:
+    image: wurstmeister/zookeeper:latest
+    container_name: kafka-broker
+    restart: always
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    ports:
+      - "9092:9092"
+
+  # producer1:
+  #   image: confluentinc/cp-kafka:latest
+  #   container_name: kafka-producer1
+  #   depends_on:
+  #     - kafka
+  #   command: >
+  #     bash -c "
+  #     echo 'Producing messages...' &&
+  #     seq 100 | kafka-console-producer --broker-list kafka:9092 --topic test-topic
+  #     "
+
+  # producer2:
+  #   image: confluentinc/cp-kafka:latest
+  #   container_name: kafka-producer2
+  #   depends_on:
+  #     - kafka
+  #   command: >
+  #     bash -c "
+  #     echo 'Producing messages from Producer 2...' &&
+  #     seq 100 200 | kafka-console-producer --broker-list kafka:9092 --topic test-topic
+  #     "
+
+  # consumer:
+  #   image: confluentinc/cp-kafka:latest
+  #   container_name: kafka-consumer
+  #   depends_on:
+  #     - kafka
+  #   command: >
+  #     bash -c "
+  #     echo 'Consuming messages...' &&
+  #     kafka-console-consumer --bootstrap-server kafka:9092 --topic test-topic --from-beginning
+  #     "

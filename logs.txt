@@ -1,0 +1,780 @@
+2025-03-14 18:45:40,082 - root - INFO - creating spark instance
+2025-03-14 18:45:42,757 - __main__ - INFO - Performing 5-fold cross-validation...
+2025-03-14 18:45:42,758 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:45:42,758 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:45:45,952 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:45:45,953 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:45:46,178 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:45:46,283 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:45:51,253 - __main__ - INFO - Model training completed
+2025-03-14 18:45:52,484 - __main__ - INFO - Fold 1 - RMSE: 0.9323749714048792
+2025-03-14 18:45:52,484 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:45:52,484 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:45:52,606 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:45:52,606 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:45:52,701 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:45:52,731 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:45:55,049 - __main__ - INFO - Model training completed
+2025-03-14 18:45:55,474 - __main__ - INFO - Fold 2 - RMSE: 0.9229162376050528
+2025-03-14 18:45:55,474 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:45:55,474 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:45:55,591 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:45:55,591 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:45:55,695 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:45:55,733 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:45:57,780 - __main__ - INFO - Model training completed
+2025-03-14 18:45:58,211 - __main__ - INFO - Fold 3 - RMSE: 0.9183590155678691
+2025-03-14 18:45:58,211 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:45:58,211 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:45:58,299 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:45:58,299 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:45:58,380 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:45:58,407 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:46:00,386 - __main__ - INFO - Model training completed
+2025-03-14 18:46:00,815 - __main__ - INFO - Fold 4 - RMSE: 0.9238259553921178
+2025-03-14 18:46:00,815 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:00,815 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:00,936 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:00,936 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:01,039 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:01,066 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:46:02,933 - __main__ - INFO - Model training completed
+2025-03-14 18:46:03,293 - __main__ - INFO - Fold 5 - RMSE: 0.9215091703603141
+2025-03-14 18:46:03,293 - __main__ - INFO - Average RMSE across 5 folds: 0.9237970700660465
+2025-03-14 18:46:03,293 - __main__ - INFO - Optimizing hyperparameters (this may take a while)...
+2025-03-14 18:46:03,294 - __main__ - INFO - Testing parameters: {'rang': 5, 'regParam': 0.01, 'iterations': 10}
+2025-03-14 18:46:03,294 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:03,294 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:03,411 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:03,411 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:03,509 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:03,534 - __main__ - INFO - Training ALS model with rank=5, regParam=0.01, iterations=10
+2025-03-14 18:46:05,330 - __main__ - INFO - Model training completed
+2025-03-14 18:46:05,743 - __main__ - INFO - Fold 1 - RMSE: 0.9800952986970034
+2025-03-14 18:46:05,744 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:05,744 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:05,855 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:05,855 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:05,941 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:05,972 - __main__ - INFO - Training ALS model with rank=5, regParam=0.01, iterations=10
+2025-03-14 18:46:07,570 - __main__ - INFO - Model training completed
+2025-03-14 18:46:07,934 - __main__ - INFO - Fold 2 - RMSE: 0.972345705785726
+2025-03-14 18:46:07,934 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:07,934 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:08,010 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:08,010 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:08,128 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:08,150 - __main__ - INFO - Training ALS model with rank=5, regParam=0.01, iterations=10
+2025-03-14 18:46:09,672 - __main__ - INFO - Model training completed
+2025-03-14 18:46:09,973 - __main__ - INFO - Fold 3 - RMSE: 0.9572977886553261
+2025-03-14 18:46:09,973 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:46:09,973 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:46:10,083 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:46:10,083 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:46:10,168 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:46:10,203 - __main__ - INFO - Training ALS model with rank=5, regParam=0.01, iterations=10
+2025-03-14 18:46:11,831 - __main__ - INFO - Model training completed
+2025-03-14 18:46:12,260 - __main__ - INFO - Fold 4 - RMSE: 0.9609036032866917
+2025-03-14 18:46:12,260 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:12,260 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:12,341 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:12,342 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:12,417 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:12,443 - __main__ - INFO - Training ALS model with rank=5, regParam=0.01, iterations=10
+2025-03-14 18:46:14,050 - __main__ - INFO - Model training completed
+2025-03-14 18:46:14,332 - __main__ - INFO - Fold 5 - RMSE: 0.9772455565020802
+2025-03-14 18:46:14,332 - __main__ - INFO - Average RMSE across 5 folds: 0.9695775905853654
+2025-03-14 18:46:14,332 - __main__ - INFO - Testing parameters: {'rang': 5, 'regParam': 0.1, 'iterations': 10}
+2025-03-14 18:46:14,332 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:14,332 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:14,413 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:14,414 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:14,503 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:14,534 - __main__ - INFO - Training ALS model with rank=5, regParam=0.1, iterations=10
+2025-03-14 18:46:16,244 - __main__ - INFO - Model training completed
+2025-03-14 18:46:16,557 - __main__ - INFO - Fold 1 - RMSE: 0.93996712168314
+2025-03-14 18:46:16,557 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:16,557 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:16,630 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:16,630 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:16,694 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:16,715 - __main__ - INFO - Training ALS model with rank=5, regParam=0.1, iterations=10
+2025-03-14 18:46:18,324 - __main__ - INFO - Model training completed
+2025-03-14 18:46:18,613 - __main__ - INFO - Fold 2 - RMSE: 0.9297744834208514
+2025-03-14 18:46:18,613 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:18,613 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:18,727 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:18,727 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:18,844 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:18,877 - __main__ - INFO - Training ALS model with rank=5, regParam=0.1, iterations=10
+2025-03-14 18:46:20,412 - __main__ - INFO - Model training completed
+2025-03-14 18:46:20,696 - __main__ - INFO - Fold 3 - RMSE: 0.9230997510265625
+2025-03-14 18:46:20,696 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:46:20,696 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:46:20,787 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:46:20,787 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:46:20,872 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:46:20,899 - __main__ - INFO - Training ALS model with rank=5, regParam=0.1, iterations=10
+2025-03-14 18:46:22,383 - __main__ - INFO - Model training completed
+2025-03-14 18:46:22,649 - __main__ - INFO - Fold 4 - RMSE: 0.9277342360207816
+2025-03-14 18:46:22,649 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:22,649 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:22,721 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:22,722 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:22,782 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:22,798 - __main__ - INFO - Training ALS model with rank=5, regParam=0.1, iterations=10
+2025-03-14 18:46:24,428 - __main__ - INFO - Model training completed
+2025-03-14 18:46:24,708 - __main__ - INFO - Fold 5 - RMSE: 0.9246252910726022
+2025-03-14 18:46:24,709 - __main__ - INFO - Average RMSE across 5 folds: 0.9290401766447876
+2025-03-14 18:46:24,709 - __main__ - INFO - Testing parameters: {'rang': 5, 'regParam': 0.5, 'iterations': 10}
+2025-03-14 18:46:24,709 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:24,709 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:24,811 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:24,812 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:24,900 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:24,926 - __main__ - INFO - Training ALS model with rank=5, regParam=0.5, iterations=10
+2025-03-14 18:46:26,406 - __main__ - INFO - Model training completed
+2025-03-14 18:46:26,834 - __main__ - INFO - Fold 1 - RMSE: 1.0741052003285976
+2025-03-14 18:46:26,834 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:26,834 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:26,914 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:26,914 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:26,993 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:27,022 - __main__ - INFO - Training ALS model with rank=5, regParam=0.5, iterations=10
+2025-03-14 18:46:28,642 - __main__ - INFO - Model training completed
+2025-03-14 18:46:28,944 - __main__ - INFO - Fold 2 - RMSE: 1.0700342126544007
+2025-03-14 18:46:28,944 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:28,944 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:29,026 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:29,026 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:29,082 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:29,096 - __main__ - INFO - Training ALS model with rank=5, regParam=0.5, iterations=10
+2025-03-14 18:46:30,683 - __main__ - INFO - Model training completed
+2025-03-14 18:46:31,011 - __main__ - INFO - Fold 3 - RMSE: 1.0681008079455052
+2025-03-14 18:46:31,011 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:46:31,011 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:46:31,095 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:46:31,095 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:46:31,185 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:46:31,218 - __main__ - INFO - Training ALS model with rank=5, regParam=0.5, iterations=10
+2025-03-14 18:46:32,769 - __main__ - INFO - Model training completed
+2025-03-14 18:46:33,111 - __main__ - INFO - Fold 4 - RMSE: 1.0655175071095606
+2025-03-14 18:46:33,111 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:33,111 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:33,199 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:33,200 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:33,310 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:33,341 - __main__ - INFO - Training ALS model with rank=5, regParam=0.5, iterations=10
+2025-03-14 18:46:34,833 - __main__ - INFO - Model training completed
+2025-03-14 18:46:35,110 - __main__ - INFO - Fold 5 - RMSE: 1.0614383684806745
+2025-03-14 18:46:35,110 - __main__ - INFO - Average RMSE across 5 folds: 1.0678392193037478
+2025-03-14 18:46:35,110 - __main__ - INFO - Testing parameters: {'rang': 5, 'regParam': 1.0, 'iterations': 10}
+2025-03-14 18:46:35,110 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:35,110 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:35,183 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:35,183 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:35,250 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:35,265 - __main__ - INFO - Training ALS model with rank=5, regParam=1.0, iterations=10
+2025-03-14 18:46:36,765 - __main__ - INFO - Model training completed
+2025-03-14 18:46:37,095 - __main__ - INFO - Fold 1 - RMSE: 1.3793454867252863
+2025-03-14 18:46:37,095 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:37,095 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:37,166 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:37,166 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:37,229 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:37,248 - __main__ - INFO - Training ALS model with rank=5, regParam=1.0, iterations=10
+2025-03-14 18:46:38,690 - __main__ - INFO - Model training completed
+2025-03-14 18:46:38,969 - __main__ - INFO - Fold 2 - RMSE: 1.3784155815945485
+2025-03-14 18:46:38,969 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:38,969 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:39,051 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:39,051 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:39,113 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:39,127 - __main__ - INFO - Training ALS model with rank=5, regParam=1.0, iterations=10
+2025-03-14 18:46:40,560 - __main__ - INFO - Model training completed
+2025-03-14 18:46:40,854 - __main__ - INFO - Fold 3 - RMSE: 1.375465268996232
+2025-03-14 18:46:40,854 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:46:40,854 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:46:40,940 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:46:40,940 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:46:41,024 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:46:41,048 - __main__ - INFO - Training ALS model with rank=5, regParam=1.0, iterations=10
+2025-03-14 18:46:42,502 - __main__ - INFO - Model training completed
+2025-03-14 18:46:42,836 - __main__ - INFO - Fold 4 - RMSE: 1.3706407927344841
+2025-03-14 18:46:42,837 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:42,837 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:42,904 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:42,904 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:42,967 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:42,992 - __main__ - INFO - Training ALS model with rank=5, regParam=1.0, iterations=10
+2025-03-14 18:46:44,375 - __main__ - INFO - Model training completed
+2025-03-14 18:46:44,655 - __main__ - INFO - Fold 5 - RMSE: 1.366808489324146
+2025-03-14 18:46:44,655 - __main__ - INFO - Average RMSE across 5 folds: 1.3741351238749393
+2025-03-14 18:46:44,656 - __main__ - INFO - Testing parameters: {'rang': 10, 'regParam': 0.01, 'iterations': 10}
+2025-03-14 18:46:44,656 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:44,656 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:44,735 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:44,735 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:44,833 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:44,856 - __main__ - INFO - Training ALS model with rank=10, regParam=0.01, iterations=10
+2025-03-14 18:46:46,494 - __main__ - INFO - Model training completed
+2025-03-14 18:46:46,805 - __main__ - INFO - Fold 1 - RMSE: 1.0388420416703996
+2025-03-14 18:46:46,805 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:46,805 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:46,896 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:46,897 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:46,976 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:46,995 - __main__ - INFO - Training ALS model with rank=10, regParam=0.01, iterations=10
+2025-03-14 18:46:48,699 - __main__ - INFO - Model training completed
+2025-03-14 18:46:49,016 - __main__ - INFO - Fold 2 - RMSE: 1.0312965308542008
+2025-03-14 18:46:49,016 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:49,016 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:49,099 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:49,100 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:49,174 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:49,189 - __main__ - INFO - Training ALS model with rank=10, regParam=0.01, iterations=10
+2025-03-14 18:46:50,756 - __main__ - INFO - Model training completed
+2025-03-14 18:46:51,052 - __main__ - INFO - Fold 3 - RMSE: 1.0264978866021757
+2025-03-14 18:46:51,052 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:46:51,052 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:46:51,132 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:46:51,132 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:46:51,187 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:46:51,205 - __main__ - INFO - Training ALS model with rank=10, regParam=0.01, iterations=10
+2025-03-14 18:46:52,804 - __main__ - INFO - Model training completed
+2025-03-14 18:46:53,101 - __main__ - INFO - Fold 4 - RMSE: 1.0137610754809812
+2025-03-14 18:46:53,101 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:46:53,101 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:46:53,173 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:46:53,174 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:46:53,237 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:46:53,254 - __main__ - INFO - Training ALS model with rank=10, regParam=0.01, iterations=10
+2025-03-14 18:46:54,848 - __main__ - INFO - Model training completed
+2025-03-14 18:46:55,143 - __main__ - INFO - Fold 5 - RMSE: 1.0324540707317496
+2025-03-14 18:46:55,143 - __main__ - INFO - Average RMSE across 5 folds: 1.0285703210679014
+2025-03-14 18:46:55,143 - __main__ - INFO - Testing parameters: {'rang': 10, 'regParam': 0.1, 'iterations': 10}
+2025-03-14 18:46:55,143 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:46:55,143 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:46:55,232 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:46:55,233 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:46:55,287 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:46:55,308 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:46:56,883 - __main__ - INFO - Model training completed
+2025-03-14 18:46:57,129 - __main__ - INFO - Fold 1 - RMSE: 0.9323749714048779
+2025-03-14 18:46:57,129 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:46:57,129 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:46:57,201 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:46:57,201 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:46:57,311 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:46:57,334 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:46:59,085 - __main__ - INFO - Model training completed
+2025-03-14 18:46:59,376 - __main__ - INFO - Fold 2 - RMSE: 0.9229162376050521
+2025-03-14 18:46:59,376 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:46:59,377 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:46:59,460 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:46:59,460 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:46:59,514 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:46:59,532 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:47:01,186 - __main__ - INFO - Model training completed
+2025-03-14 18:47:01,475 - __main__ - INFO - Fold 3 - RMSE: 0.9183590155678691
+2025-03-14 18:47:01,475 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:01,476 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:01,537 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:01,537 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:01,593 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:01,606 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:47:03,166 - __main__ - INFO - Model training completed
+2025-03-14 18:47:03,497 - __main__ - INFO - Fold 4 - RMSE: 0.9238259553921178
+2025-03-14 18:47:03,497 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:03,497 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:03,561 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:03,561 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:03,625 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:03,637 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:47:05,274 - __main__ - INFO - Model training completed
+2025-03-14 18:47:05,612 - __main__ - INFO - Fold 5 - RMSE: 0.9215091703603164
+2025-03-14 18:47:05,612 - __main__ - INFO - Average RMSE across 5 folds: 0.9237970700660467
+2025-03-14 18:47:05,613 - __main__ - INFO - Testing parameters: {'rang': 10, 'regParam': 0.5, 'iterations': 10}
+2025-03-14 18:47:05,613 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:05,613 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:05,710 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:05,710 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:05,801 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:05,823 - __main__ - INFO - Training ALS model with rank=10, regParam=0.5, iterations=10
+2025-03-14 18:47:07,199 - __main__ - INFO - Model training completed
+2025-03-14 18:47:07,439 - __main__ - INFO - Fold 1 - RMSE: 1.0742181857257298
+2025-03-14 18:47:07,439 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:07,439 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:07,518 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:07,518 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:07,581 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:07,594 - __main__ - INFO - Training ALS model with rank=10, regParam=0.5, iterations=10
+2025-03-14 18:47:08,954 - __main__ - INFO - Model training completed
+2025-03-14 18:47:09,260 - __main__ - INFO - Fold 2 - RMSE: 1.0702031266577217
+2025-03-14 18:47:09,261 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:47:09,261 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:47:09,347 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:47:09,347 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:47:09,430 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:47:09,452 - __main__ - INFO - Training ALS model with rank=10, regParam=0.5, iterations=10
+2025-03-14 18:47:10,882 - __main__ - INFO - Model training completed
+2025-03-14 18:47:11,156 - __main__ - INFO - Fold 3 - RMSE: 1.068280383791396
+2025-03-14 18:47:11,156 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:11,156 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:11,254 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:11,254 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:11,337 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:11,359 - __main__ - INFO - Training ALS model with rank=10, regParam=0.5, iterations=10
+2025-03-14 18:47:12,895 - __main__ - INFO - Model training completed
+2025-03-14 18:47:13,193 - __main__ - INFO - Fold 4 - RMSE: 1.065658457895423
+2025-03-14 18:47:13,193 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:13,193 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:13,282 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:13,282 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:13,334 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:13,350 - __main__ - INFO - Training ALS model with rank=10, regParam=0.5, iterations=10
+2025-03-14 18:47:14,785 - __main__ - INFO - Model training completed
+2025-03-14 18:47:15,051 - __main__ - INFO - Fold 5 - RMSE: 1.0615215144261319
+2025-03-14 18:47:15,051 - __main__ - INFO - Average RMSE across 5 folds: 1.0679763336992805
+2025-03-14 18:47:15,051 - __main__ - INFO - Testing parameters: {'rang': 10, 'regParam': 1.0, 'iterations': 10}
+2025-03-14 18:47:15,052 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:15,052 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:15,135 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:15,135 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:15,190 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:15,202 - __main__ - INFO - Training ALS model with rank=10, regParam=1.0, iterations=10
+2025-03-14 18:47:16,802 - __main__ - INFO - Model training completed
+2025-03-14 18:47:17,103 - __main__ - INFO - Fold 1 - RMSE: 1.3793454668413996
+2025-03-14 18:47:17,103 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:17,103 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:17,204 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:17,204 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:17,306 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:17,328 - __main__ - INFO - Training ALS model with rank=10, regParam=1.0, iterations=10
+2025-03-14 18:47:19,126 - __main__ - INFO - Model training completed
+2025-03-14 18:47:19,392 - __main__ - INFO - Fold 2 - RMSE: 1.378415511282893
+2025-03-14 18:47:19,392 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:47:19,392 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:47:19,482 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:47:19,483 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:47:19,567 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:47:19,589 - __main__ - INFO - Training ALS model with rank=10, regParam=1.0, iterations=10
+2025-03-14 18:47:20,988 - __main__ - INFO - Model training completed
+2025-03-14 18:47:21,263 - __main__ - INFO - Fold 3 - RMSE: 1.3754651720719082
+2025-03-14 18:47:21,263 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:21,263 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:21,329 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:21,329 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:21,387 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:21,400 - __main__ - INFO - Training ALS model with rank=10, regParam=1.0, iterations=10
+2025-03-14 18:47:22,916 - __main__ - INFO - Model training completed
+2025-03-14 18:47:23,250 - __main__ - INFO - Fold 4 - RMSE: 1.3706407341674276
+2025-03-14 18:47:23,250 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:23,250 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:23,348 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:23,349 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:23,438 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:23,459 - __main__ - INFO - Training ALS model with rank=10, regParam=1.0, iterations=10
+2025-03-14 18:47:24,996 - __main__ - INFO - Model training completed
+2025-03-14 18:47:25,260 - __main__ - INFO - Fold 5 - RMSE: 1.366808466536775
+2025-03-14 18:47:25,261 - __main__ - INFO - Average RMSE across 5 folds: 1.3741350701800807
+2025-03-14 18:47:25,261 - __main__ - INFO - Testing parameters: {'rang': 15, 'regParam': 0.01, 'iterations': 10}
+2025-03-14 18:47:25,261 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:25,261 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:25,329 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:25,329 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:25,392 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:25,413 - __main__ - INFO - Training ALS model with rank=15, regParam=0.01, iterations=10
+2025-03-14 18:47:27,203 - __main__ - INFO - Model training completed
+2025-03-14 18:47:27,460 - __main__ - INFO - Fold 1 - RMSE: 1.0818545174834648
+2025-03-14 18:47:27,461 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:27,461 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:27,536 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:27,536 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:27,596 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:27,610 - __main__ - INFO - Training ALS model with rank=15, regParam=0.01, iterations=10
+2025-03-14 18:47:29,281 - __main__ - INFO - Model training completed
+2025-03-14 18:47:29,578 - __main__ - INFO - Fold 2 - RMSE: 1.0537989035445012
+2025-03-14 18:47:29,578 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:47:29,578 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:47:29,675 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:47:29,675 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:47:29,743 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:47:29,769 - __main__ - INFO - Training ALS model with rank=15, regParam=0.01, iterations=10
+2025-03-14 18:47:31,567 - __main__ - INFO - Model training completed
+2025-03-14 18:47:31,856 - __main__ - INFO - Fold 3 - RMSE: 1.050063132142951
+2025-03-14 18:47:31,856 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:31,857 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:31,934 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:31,934 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:32,005 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:32,027 - __main__ - INFO - Training ALS model with rank=15, regParam=0.01, iterations=10
+2025-03-14 18:47:33,736 - __main__ - INFO - Model training completed
+2025-03-14 18:47:33,983 - __main__ - INFO - Fold 4 - RMSE: 1.0598329717826984
+2025-03-14 18:47:33,983 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:33,983 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:34,081 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:34,081 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:34,168 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:34,183 - __main__ - INFO - Training ALS model with rank=15, regParam=0.01, iterations=10
+2025-03-14 18:47:35,984 - __main__ - INFO - Model training completed
+2025-03-14 18:47:36,249 - __main__ - INFO - Fold 5 - RMSE: 1.0694241313316033
+2025-03-14 18:47:36,249 - __main__ - INFO - Average RMSE across 5 folds: 1.0629947312570436
+2025-03-14 18:47:36,249 - __main__ - INFO - Testing parameters: {'rang': 15, 'regParam': 0.1, 'iterations': 10}
+2025-03-14 18:47:36,249 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:36,249 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:36,329 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:36,329 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:36,377 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:36,388 - __main__ - INFO - Training ALS model with rank=15, regParam=0.1, iterations=10
+2025-03-14 18:47:38,005 - __main__ - INFO - Model training completed
+2025-03-14 18:47:38,289 - __main__ - INFO - Fold 1 - RMSE: 0.9331731699367433
+2025-03-14 18:47:38,289 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:38,289 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:38,380 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:38,380 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:38,443 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:38,454 - __main__ - INFO - Training ALS model with rank=15, regParam=0.1, iterations=10
+2025-03-14 18:47:39,984 - __main__ - INFO - Model training completed
+2025-03-14 18:47:40,298 - __main__ - INFO - Fold 2 - RMSE: 0.9278887485752173
+2025-03-14 18:47:40,298 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:47:40,298 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:47:40,374 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:47:40,374 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:47:40,462 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:47:40,486 - __main__ - INFO - Training ALS model with rank=15, regParam=0.1, iterations=10
+2025-03-14 18:47:42,096 - __main__ - INFO - Model training completed
+2025-03-14 18:47:42,461 - __main__ - INFO - Fold 3 - RMSE: 0.9212033522546743
+2025-03-14 18:47:42,461 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:42,461 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:42,530 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:42,530 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:42,586 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:42,608 - __main__ - INFO - Training ALS model with rank=15, regParam=0.1, iterations=10
+2025-03-14 18:47:44,349 - __main__ - INFO - Model training completed
+2025-03-14 18:47:44,656 - __main__ - INFO - Fold 4 - RMSE: 0.9252013480267814
+2025-03-14 18:47:44,656 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:44,656 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:44,724 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:44,724 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:44,788 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:44,804 - __main__ - INFO - Training ALS model with rank=15, regParam=0.1, iterations=10
+2025-03-14 18:47:46,590 - __main__ - INFO - Model training completed
+2025-03-14 18:47:46,905 - __main__ - INFO - Fold 5 - RMSE: 0.9250388773314759
+2025-03-14 18:47:46,905 - __main__ - INFO - Average RMSE across 5 folds: 0.9265010992249785
+2025-03-14 18:47:46,905 - __main__ - INFO - Testing parameters: {'rang': 15, 'regParam': 0.5, 'iterations': 10}
+2025-03-14 18:47:46,905 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:46,905 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:46,965 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:46,965 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:47,015 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:47,026 - __main__ - INFO - Training ALS model with rank=15, regParam=0.5, iterations=10
+2025-03-14 18:47:48,614 - __main__ - INFO - Model training completed
+2025-03-14 18:47:48,902 - __main__ - INFO - Fold 1 - RMSE: 1.074460505081884
+2025-03-14 18:47:48,902 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:48,902 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:48,991 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:48,991 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:49,041 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:49,052 - __main__ - INFO - Training ALS model with rank=15, regParam=0.5, iterations=10
+2025-03-14 18:47:50,577 - __main__ - INFO - Model training completed
+2025-03-14 18:47:50,898 - __main__ - INFO - Fold 2 - RMSE: 1.0703727535321175
+2025-03-14 18:47:50,898 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:47:50,898 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:47:50,963 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:47:50,963 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:47:51,025 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:47:51,038 - __main__ - INFO - Training ALS model with rank=15, regParam=0.5, iterations=10
+2025-03-14 18:47:52,514 - __main__ - INFO - Model training completed
+2025-03-14 18:47:52,793 - __main__ - INFO - Fold 3 - RMSE: 1.0684256331240158
+2025-03-14 18:47:52,793 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:47:52,793 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:47:52,854 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:47:52,854 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:47:52,908 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:47:52,917 - __main__ - INFO - Training ALS model with rank=15, regParam=0.5, iterations=10
+2025-03-14 18:47:54,435 - __main__ - INFO - Model training completed
+2025-03-14 18:47:54,761 - __main__ - INFO - Fold 4 - RMSE: 1.0658298822485666
+2025-03-14 18:47:54,761 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:47:54,761 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:47:54,847 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:47:54,847 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:47:54,928 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:47:54,949 - __main__ - INFO - Training ALS model with rank=15, regParam=0.5, iterations=10
+2025-03-14 18:47:56,554 - __main__ - INFO - Model training completed
+2025-03-14 18:47:56,852 - __main__ - INFO - Fold 5 - RMSE: 1.061699767322261
+2025-03-14 18:47:56,852 - __main__ - INFO - Average RMSE across 5 folds: 1.068157708261769
+2025-03-14 18:47:56,852 - __main__ - INFO - Testing parameters: {'rang': 15, 'regParam': 1.0, 'iterations': 10}
+2025-03-14 18:47:56,852 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:47:56,852 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:47:56,916 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:47:56,917 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:47:56,966 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:47:56,977 - __main__ - INFO - Training ALS model with rank=15, regParam=1.0, iterations=10
+2025-03-14 18:47:58,436 - __main__ - INFO - Model training completed
+2025-03-14 18:47:58,759 - __main__ - INFO - Fold 1 - RMSE: 1.3793452636736436
+2025-03-14 18:47:58,759 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:47:58,759 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:47:58,819 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:47:58,819 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:47:58,872 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:47:58,884 - __main__ - INFO - Training ALS model with rank=15, regParam=1.0, iterations=10
+2025-03-14 18:48:00,524 - __main__ - INFO - Model training completed
+2025-03-14 18:48:00,808 - __main__ - INFO - Fold 2 - RMSE: 1.3784153657826606
+2025-03-14 18:48:00,808 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:48:00,808 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:48:00,891 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:48:00,891 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:48:00,972 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:48:00,993 - __main__ - INFO - Training ALS model with rank=15, regParam=1.0, iterations=10
+2025-03-14 18:48:02,557 - __main__ - INFO - Model training completed
+2025-03-14 18:48:02,886 - __main__ - INFO - Fold 3 - RMSE: 1.3754650461300713
+2025-03-14 18:48:02,886 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:48:02,886 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:48:02,983 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:48:02,983 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:48:03,080 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:48:03,103 - __main__ - INFO - Training ALS model with rank=15, regParam=1.0, iterations=10
+2025-03-14 18:48:04,581 - __main__ - INFO - Model training completed
+2025-03-14 18:48:04,833 - __main__ - INFO - Fold 4 - RMSE: 1.3706405912537478
+2025-03-14 18:48:04,833 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:48:04,833 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:48:04,924 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:48:04,924 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:48:04,996 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:48:05,014 - __main__ - INFO - Training ALS model with rank=15, regParam=1.0, iterations=10
+2025-03-14 18:48:06,472 - __main__ - INFO - Model training completed
+2025-03-14 18:48:06,783 - __main__ - INFO - Fold 5 - RMSE: 1.3668083245886373
+2025-03-14 18:48:06,783 - __main__ - INFO - Average RMSE across 5 folds: 1.374134918285752
+2025-03-14 18:48:06,783 - __main__ - INFO - Testing parameters: {'rang': 20, 'regParam': 0.01, 'iterations': 10}
+2025-03-14 18:48:06,783 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:48:06,783 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:48:06,855 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:48:06,855 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:48:06,907 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:48:06,918 - __main__ - INFO - Training ALS model with rank=20, regParam=0.01, iterations=10
+2025-03-14 18:48:08,932 - __main__ - INFO - Model training completed
+2025-03-14 18:48:09,273 - __main__ - INFO - Fold 1 - RMSE: 1.0964381938756276
+2025-03-14 18:48:09,273 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:48:09,273 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:48:09,332 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:48:09,332 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:48:09,382 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:48:09,403 - __main__ - INFO - Training ALS model with rank=20, regParam=0.01, iterations=10
+2025-03-14 18:48:11,382 - __main__ - INFO - Model training completed
+2025-03-14 18:48:11,706 - __main__ - INFO - Fold 2 - RMSE: 1.0839663492737808
+2025-03-14 18:48:11,706 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:48:11,706 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:48:11,770 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:48:11,770 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:48:11,821 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:48:11,832 - __main__ - INFO - Training ALS model with rank=20, regParam=0.01, iterations=10
+2025-03-14 18:48:13,674 - __main__ - INFO - Model training completed
+2025-03-14 18:48:14,012 - __main__ - INFO - Fold 3 - RMSE: 1.0826119625731476
+2025-03-14 18:48:14,012 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:48:14,012 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:48:14,072 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:48:14,073 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:48:14,153 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:48:14,165 - __main__ - INFO - Training ALS model with rank=20, regParam=0.01, iterations=10
+2025-03-14 18:48:16,054 - __main__ - INFO - Model training completed
+2025-03-14 18:48:16,387 - __main__ - INFO - Fold 4 - RMSE: 1.0673454327014236
+2025-03-14 18:48:16,387 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:48:16,387 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:48:16,479 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:48:16,479 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:48:16,568 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:48:16,588 - __main__ - INFO - Training ALS model with rank=20, regParam=0.01, iterations=10
+2025-03-14 18:48:18,713 - __main__ - INFO - Model training completed
+2025-03-14 18:48:19,082 - __main__ - INFO - Fold 5 - RMSE: 1.08257128836727
+2025-03-14 18:48:19,082 - __main__ - INFO - Average RMSE across 5 folds: 1.08258664535825
+2025-03-14 18:48:19,082 - __main__ - INFO - Testing parameters: {'rang': 20, 'regParam': 0.1, 'iterations': 10}
+2025-03-14 18:48:19,082 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:48:19,082 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:48:19,163 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:48:19,163 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:48:19,233 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:48:19,250 - __main__ - INFO - Training ALS model with rank=20, regParam=0.1, iterations=10
+2025-03-14 18:48:21,076 - __main__ - INFO - Model training completed
+2025-03-14 18:48:21,390 - __main__ - INFO - Fold 1 - RMSE: 0.9326944742283731
+2025-03-14 18:48:21,390 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:48:21,390 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:48:21,453 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:48:21,453 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:48:21,514 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:48:21,528 - __main__ - INFO - Training ALS model with rank=20, regParam=0.1, iterations=10
+2025-03-14 18:48:23,208 - __main__ - INFO - Model training completed
+2025-03-14 18:48:23,467 - __main__ - INFO - Fold 2 - RMSE: 0.9239214183710441
+2025-03-14 18:48:23,467 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:48:23,467 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:48:23,546 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:48:23,546 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:48:23,632 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:48:23,654 - __main__ - INFO - Training ALS model with rank=20, regParam=0.1, iterations=10
+2025-03-14 18:48:25,445 - __main__ - INFO - Model training completed
+2025-03-14 18:48:25,782 - __main__ - INFO - Fold 3 - RMSE: 0.9200864051776098
+2025-03-14 18:48:25,782 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:48:25,782 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:48:25,843 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:48:25,843 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:48:25,917 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:48:25,939 - __main__ - INFO - Training ALS model with rank=20, regParam=0.1, iterations=10
+2025-03-14 18:48:27,632 - __main__ - INFO - Model training completed
+2025-03-14 18:48:27,953 - __main__ - INFO - Fold 4 - RMSE: 0.9220615420429499
+2025-03-14 18:48:27,953 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:48:27,953 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:48:28,038 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:48:28,038 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:48:28,111 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:48:28,130 - __main__ - INFO - Training ALS model with rank=20, regParam=0.1, iterations=10
+2025-03-14 18:48:29,836 - __main__ - INFO - Model training completed
+2025-03-14 18:48:30,203 - __main__ - INFO - Fold 5 - RMSE: 0.9226925788182642
+2025-03-14 18:48:30,203 - __main__ - INFO - Average RMSE across 5 folds: 0.9242912837276481
+2025-03-14 18:48:30,203 - __main__ - INFO - Testing parameters: {'rang': 20, 'regParam': 0.5, 'iterations': 10}
+2025-03-14 18:48:30,203 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:48:30,203 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:48:30,293 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:48:30,294 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:48:30,382 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:48:30,402 - __main__ - INFO - Training ALS model with rank=20, regParam=0.5, iterations=10
+2025-03-14 18:48:31,911 - __main__ - INFO - Model training completed
+2025-03-14 18:48:32,212 - __main__ - INFO - Fold 1 - RMSE: 1.0744999521471266
+2025-03-14 18:48:32,212 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:48:32,212 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:48:32,308 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:48:32,308 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:48:32,371 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:48:32,384 - __main__ - INFO - Training ALS model with rank=20, regParam=0.5, iterations=10
+2025-03-14 18:48:34,010 - __main__ - INFO - Model training completed
+2025-03-14 18:48:34,326 - __main__ - INFO - Fold 2 - RMSE: 1.0704184037342535
+2025-03-14 18:48:34,326 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:48:34,326 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:48:34,384 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:48:34,384 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:48:34,451 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:48:34,466 - __main__ - INFO - Training ALS model with rank=20, regParam=0.5, iterations=10
+2025-03-14 18:48:36,057 - __main__ - INFO - Model training completed
+2025-03-14 18:48:36,323 - __main__ - INFO - Fold 3 - RMSE: 1.0684806769843664
+2025-03-14 18:48:36,323 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:48:36,323 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:48:36,385 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:48:36,385 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:48:36,442 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:48:36,454 - __main__ - INFO - Training ALS model with rank=20, regParam=0.5, iterations=10
+2025-03-14 18:48:37,968 - __main__ - INFO - Model training completed
+2025-03-14 18:48:38,248 - __main__ - INFO - Fold 4 - RMSE: 1.0659002827127426
+2025-03-14 18:48:38,248 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:48:38,248 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:48:38,305 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:48:38,305 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:48:38,353 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:48:38,364 - __main__ - INFO - Training ALS model with rank=20, regParam=0.5, iterations=10
+2025-03-14 18:48:39,833 - __main__ - INFO - Model training completed
+2025-03-14 18:48:40,119 - __main__ - INFO - Fold 5 - RMSE: 1.061791694004834
+2025-03-14 18:48:40,119 - __main__ - INFO - Average RMSE across 5 folds: 1.0682182019166646
+2025-03-14 18:48:40,119 - __main__ - INFO - Testing parameters: {'rang': 20, 'regParam': 1.0, 'iterations': 10}
+2025-03-14 18:48:40,119 - __main__ - INFO - ==== Fold 1 ====
+2025-03-14 18:48:40,120 - __main__ - INFO - Reading data from data/u1.base...
+2025-03-14 18:48:40,182 - __main__ - INFO - Successfully read 80000 records from data/u1.base
+2025-03-14 18:48:40,182 - __main__ - INFO - Reading data from data/u1.test...
+2025-03-14 18:48:40,231 - __main__ - INFO - Successfully read 20000 records from data/u1.test
+2025-03-14 18:48:40,246 - __main__ - INFO - Training ALS model with rank=20, regParam=1.0, iterations=10
+2025-03-14 18:48:41,782 - __main__ - INFO - Model training completed
+2025-03-14 18:48:42,087 - __main__ - INFO - Fold 1 - RMSE: 1.379345258415539
+2025-03-14 18:48:42,088 - __main__ - INFO - ==== Fold 2 ====
+2025-03-14 18:48:42,088 - __main__ - INFO - Reading data from data/u2.base...
+2025-03-14 18:48:42,177 - __main__ - INFO - Successfully read 80000 records from data/u2.base
+2025-03-14 18:48:42,177 - __main__ - INFO - Reading data from data/u2.test...
+2025-03-14 18:48:42,260 - __main__ - INFO - Successfully read 20000 records from data/u2.test
+2025-03-14 18:48:42,281 - __main__ - INFO - Training ALS model with rank=20, regParam=1.0, iterations=10
+2025-03-14 18:48:43,820 - __main__ - INFO - Model training completed
+2025-03-14 18:48:44,133 - __main__ - INFO - Fold 2 - RMSE: 1.3784153455527028
+2025-03-14 18:48:44,133 - __main__ - INFO - ==== Fold 3 ====
+2025-03-14 18:48:44,133 - __main__ - INFO - Reading data from data/u3.base...
+2025-03-14 18:48:44,204 - __main__ - INFO - Successfully read 80000 records from data/u3.base
+2025-03-14 18:48:44,204 - __main__ - INFO - Reading data from data/u3.test...
+2025-03-14 18:48:44,260 - __main__ - INFO - Successfully read 20000 records from data/u3.test
+2025-03-14 18:48:44,274 - __main__ - INFO - Training ALS model with rank=20, regParam=1.0, iterations=10
+2025-03-14 18:48:45,673 - __main__ - INFO - Model training completed
+2025-03-14 18:48:45,957 - __main__ - INFO - Fold 3 - RMSE: 1.3754650113541553
+2025-03-14 18:48:45,957 - __main__ - INFO - ==== Fold 4 ====
+2025-03-14 18:48:45,957 - __main__ - INFO - Reading data from data/u4.base...
+2025-03-14 18:48:46,025 - __main__ - INFO - Successfully read 80000 records from data/u4.base
+2025-03-14 18:48:46,025 - __main__ - INFO - Reading data from data/u4.test...
+2025-03-14 18:48:46,077 - __main__ - INFO - Successfully read 20000 records from data/u4.test
+2025-03-14 18:48:46,090 - __main__ - INFO - Training ALS model with rank=20, regParam=1.0, iterations=10
+2025-03-14 18:48:47,685 - __main__ - INFO - Model training completed
+2025-03-14 18:48:47,959 - __main__ - INFO - Fold 4 - RMSE: 1.3706405418971532
+2025-03-14 18:48:47,959 - __main__ - INFO - ==== Fold 5 ====
+2025-03-14 18:48:47,959 - __main__ - INFO - Reading data from data/u5.base...
+2025-03-14 18:48:48,044 - __main__ - INFO - Successfully read 80000 records from data/u5.base
+2025-03-14 18:48:48,044 - __main__ - INFO - Reading data from data/u5.test...
+2025-03-14 18:48:48,131 - __main__ - INFO - Successfully read 20000 records from data/u5.test
+2025-03-14 18:48:48,153 - __main__ - INFO - Training ALS model with rank=20, regParam=1.0, iterations=10
+2025-03-14 18:48:49,648 - __main__ - INFO - Model training completed
+2025-03-14 18:48:49,931 - __main__ - INFO - Fold 5 - RMSE: 1.3668082632927236
+2025-03-14 18:48:49,931 - __main__ - INFO - Average RMSE across 5 folds: 1.3741348841024548
+2025-03-14 18:48:49,931 - __main__ - INFO - Best parameters: {'rang': 10, 'regParam': 0.1, 'iterations': 10}, RMSE: 0.9237970700660467
+2025-03-14 18:48:49,931 - __main__ - INFO - All results (sorted by RMSE):
+2025-03-14 18:48:49,931 - __main__ - INFO - Rank: 10, RegParam: 0.1, RMSE: 0.9237970700660467
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 20, RegParam: 0.1, RMSE: 0.9242912837276481
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 15, RegParam: 0.1, RMSE: 0.9265010992249785
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 5, RegParam: 0.1, RMSE: 0.9290401766447876
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 5, RegParam: 0.01, RMSE: 0.9695775905853654
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 10, RegParam: 0.01, RMSE: 1.0285703210679014
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 15, RegParam: 0.01, RMSE: 1.0629947312570436
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 5, RegParam: 0.5, RMSE: 1.0678392193037478
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 10, RegParam: 0.5, RMSE: 1.0679763336992805
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 15, RegParam: 0.5, RMSE: 1.068157708261769
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 20, RegParam: 0.5, RMSE: 1.0682182019166646
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 20, RegParam: 0.01, RMSE: 1.08258664535825
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 20, RegParam: 1.0, RMSE: 1.3741348841024548
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 15, RegParam: 1.0, RMSE: 1.374134918285752
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 10, RegParam: 1.0, RMSE: 1.3741350701800807
+2025-03-14 18:48:49,932 - __main__ - INFO - Rank: 5, RegParam: 1.0, RMSE: 1.3741351238749393
+2025-03-14 18:48:49,932 - __main__ - INFO - Training final model with optimized parameters...
+2025-03-14 18:48:49,932 - __main__ - INFO - Reading data from data/ua.base...
+2025-03-14 18:48:50,026 - __main__ - INFO - Successfully read 90570 records from data/ua.base
+2025-03-14 18:48:50,026 - __main__ - INFO - Reading data from data/ua.test...
+2025-03-14 18:48:50,077 - __main__ - INFO - Successfully read 9430 records from data/ua.test
+2025-03-14 18:48:50,090 - __main__ - INFO - Training final model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:48:50,090 - __main__ - INFO - Training ALS model with rank=10, regParam=0.1, iterations=10
+2025-03-14 18:48:51,732 - __main__ - INFO - Model training completed
+2025-03-14 18:48:52,003 - __main__ - INFO - Final model RMSE on ua.test: 0.9524820053199631
+2025-03-14 18:48:52,003 - __main__ - INFO - Reading data from data/u.item...
+2025-03-14 18:48:52,093 - __main__ - INFO - Successfully read 1682 records from data/u.item
+2025-03-14 18:48:52,093 - __main__ - INFO - Creating Elasticsearch index: recommendations
+2025-03-14 18:48:52,259 - __main__ - INFO - Successfully created index 'recommendations'
+2025-03-14 18:48:52,259 - __main__ - INFO - Generating 10 recommendations for user 1
+2025-03-14 18:48:52,260 - root - INFO - creating spark instance
+2025-03-14 18:48:54,231 - __main__ - INFO - Top 5 recommendations for user 1:
+2025-03-14 18:48:54,231 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:54,917 - __main__ - INFO - Saving recommendations to Elasticsearch index: recommendations
+2025-03-14 18:48:54,942 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:55,629 - __main__ - INFO - Generating 10 recommendations for user 100
+2025-03-14 18:48:55,629 - root - INFO - creating spark instance
+2025-03-14 18:48:56,143 - __main__ - INFO - Top 5 recommendations for user 100:
+2025-03-14 18:48:56,143 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:56,601 - __main__ - INFO - Saving recommendations to Elasticsearch index: recommendations
+2025-03-14 18:48:56,627 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:57,196 - __main__ - INFO - Generating 10 recommendations for user 200
+2025-03-14 18:48:57,197 - root - INFO - creating spark instance
+2025-03-14 18:48:57,705 - __main__ - INFO - Top 5 recommendations for user 200:
+2025-03-14 18:48:57,705 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:58,162 - __main__ - INFO - Saving recommendations to Elasticsearch index: recommendations
+2025-03-14 18:48:58,195 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:58,731 - __main__ - INFO - Generating 10 recommendations for user 300
+2025-03-14 18:48:58,731 - root - INFO - creating spark instance
+2025-03-14 18:48:59,206 - __main__ - INFO - Top 5 recommendations for user 300:
+2025-03-14 18:48:59,206 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:48:59,641 - __main__ - INFO - Saving recommendations to Elasticsearch index: recommendations
+2025-03-14 18:48:59,671 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:49:00,256 - __main__ - INFO - Generating 10 recommendations for user 500
+2025-03-14 18:49:00,256 - root - INFO - creating spark instance
+2025-03-14 18:49:00,690 - __main__ - INFO - Top 5 recommendations for user 500:
+2025-03-14 18:49:00,690 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:49:01,113 - __main__ - INFO - Saving recommendations to Elasticsearch index: recommendations
+2025-03-14 18:49:01,135 - __main__ - INFO - Enriching recommendations with movie information
+2025-03-14 18:49:01,667 - __main__ - INFO - ALS recommendation model training completed successfully
+2025-03-14 18:49:01,667 - __main__ - INFO - Recommendations saved to Elasticsearch
+2025-03-14 18:49:03,556 - __main__ - INFO - Spark session stopped

@@ -1,6 +1,23 @@
 import requests
 import os
 from dotenv import load_dotenv
+from confluent_kafka import Producer
+import json
+import requests
+import time
+
+# Kafka configuration
+KAFKA_BROKER = "localhost:9092"  # Ensure this matches your Kafka container settings
+TOPIC_NAME = "users"
+
+# Configure the Kafka Producer
+producer_config = {
+    "bootstrap.servers": KAFKA_BROKER,
+    "acks": "all",  # Ensure all replicas acknowledge the message
+      "retries": 3  # Retries in case of transient failures
+}
+
+producer = Producer(producer_config)
 
 def get_all_movies(api_key, page=1, max_pages=5):
     """
@@ -62,8 +79,11 @@ def main():
     # Print movie titles
     print(f"Found {len(movies)} movies:")
     for i, movie in enumerate(movies, 1):
-      q={ "movie":movie['title'],"date":movie['release_date'][:4],"Rating": movie['vote_average']}
-      print(q)
+       q={ "movie":movie['title'],"date":movie['release_date'],"Rating": movie['vote_average'],'vote_average':movie['vote_average'], 'vote_count': movie['vote_count'],'popularity':movie['popularity']}
+       producer.produce(TOPIC_NAME, key=str(user["login"]["uuid"]+user["email"]), value=user_json, callback=delivery_report)
+       time.sleep(0.6)  # Small delay to simulate a real-time stream
+       producer.flush()  # Ensure all messages are sent before exiting
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,14 @@
+>> md5sum :
+>md5sum "is a computer program that calculates and verifies 128-bit MD5 hashes, as described in RFC 1321. he MD5 hash functions as a compact digital fingerprint of a file"
+
+>> pyspark:
+df = spark.read.option("delimiter", "\t").csv("file_path")`
+"""To read a CSV file in PySpark with a custom separator, you can use the option("delimiter", "separator") method. For example, if your CSV file uses a tab (\t) as the separator, you can read it using:"""
+
+"""For handling multiple delimiters, such as a custom string like ]|[, you can read the file as text and then split the lines manually:"""
+
+"""df = spark.sparkContext.textFile("file_path").map(lambda line: line.split("|][")).toDF()"""
+
+
+To handle the cold start problem, set the coldStartStrategy option to drop in the ALS model. This will drop any rows where the model cannot make predictions due to missing data.
+

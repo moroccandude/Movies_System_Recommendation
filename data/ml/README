@@ -1,0 +1,63 @@
+** Compressed Archive **
+ml-data.tar.gz:
+A compressed tar file containing the dataset files.
+To extract and rebuild the dataset:
+gunzip ml-data.tar.gz - Decompresses the .tar.gz file into ml-data.tar.
+tar xvf ml-data.tar - Extracts the contents of the .tar file.
+mku.sh - Runs a shell script (described later) to generate the specific data files (e.g., training/test splits).
+Core Data Files
+u.data:
+Contains the main ratings data: 100,000 ratings from 943 users on 1,682 items (movies).
+Each user has rated at least 20 movies.
+Data is randomly ordered and tab-separated with four columns:
+user id | item id | rating | timestamp
+Details:
+user id and item id are numbered consecutively starting from 1.
+rating is the user’s rating for the movie (typically on a scale, e.g., 1–5, though not specified here).
+timestamp is in Unix seconds since January 1, 1970 (UTC).
+u.info:
+A summary file providing the total number of users, items (movies), and ratings in u.data.
+u.item:
+Contains metadata about the movies (items).
+Tab-separated list with the following columns:
+movie id | movie title | release date | video release date | IMDb URL | unknown | 19 genre fields (e.g., Action, Adventure, etc.).
+Genres: The last 19 fields are binary (1 = movie belongs to that genre, 0 = it does not). Movies can belong to multiple genres.
+The movie id matches those in u.data.
+u.genre:
+A simple list of the 19 possible movie genres (e.g., Action, Comedy, Drama).
+u.user:
+Demographic data about the users.
+Tab-separated list with columns:
+user id | age | gender | occupation | zip code
+The user id matches those in u.data.
+u.occupation:
+A list of possible occupations for users (e.g., student, engineer, teacher).
+Training and Test Splits
+The dataset includes pre-split versions of u.data for machine learning experiments, such as cross-validation or train/test evaluation. These are generated using the mku.sh script.
+
+u1.base, u1.test through u5.base, u5.test:
+Five pairs of training (base) and test (test) sets.
+Each pair represents an 80%/20% split of u.data.
+The test sets across u1.test to u5.test are disjoint (non-overlapping).
+Purpose: Used for 5-fold cross-validation, where you train and test a model five times (once with each pair) and average the results.
+ua.base, ua.test, ub.base, ub.test:
+Two additional train/test splits of u.data.
+Each test set (ua.test, ub.test) contains exactly 10 ratings per user.
+The test sets are disjoint.
+Purpose: Useful for evaluating recommendation systems with a fixed number of test ratings per user.
+
+Scripts
+allbut.pl:
+A Perl script that generates custom training/test splits.
+For each user, it places all but n of their ratings in the training set, with the remaining n in the test set.
+Allows flexibility in controlling the size of the test set.
+mku.sh:
+A shell script that automates the creation of all the split datasets (u1.base, u1.test, etc., and ua.base, ua.test, etc.) from u.data.
+Running this script after extracting ml-data.tar regenerates these files.
+Summary
+This dataset is designed for research in recommendation systems or collaborative filtering. Here’s a quick overview:
+
+Core Data: u.data (ratings), u.item (movie info), u.user (user info).
+Metadata: u.info, u.genre, u.occupation.
+Splits: Predefined train/test sets (u1–u5, ua, ub) for experimentation.
+Tools: mku.sh and allbut.pl for generating splits.
